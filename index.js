@@ -1,17 +1,9 @@
- 
- function receivesAFunction (callback){
-     callback();
-     return ('return something random' )
- }
 
- function returnsANamedFunction() {
-     return function namedFunction(){
-         return ('something random');
-     }
- }
+function receivesAFunction(callback) {
+    return callback();
+}
 
- function returnsAnAnonymousFunction(){
-     return function () {
-         return ('mysterous return');
-     }
- }
+const returnsANamedFunction = function() {
+    return aNamedFunction();
+}
+
